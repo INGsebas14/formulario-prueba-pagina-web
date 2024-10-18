@@ -69,3 +69,50 @@ userForm.addEventListener('submit', async (e) => {
     alert('Hubo un error al guardar los datos. Inténtalo de nuevo.');
   }
 });
+
+const textos = [ "Bienvenido", "Gracias por ayudarme","Formulario de Usuario"];
+/*
+let i = 0;
+function cambiarTexto() {
+    document.getElementById("texto").innerHTML = textos[i];
+    i = (i + 1) % textos.length;
+}
+setInterval(cambiarTexto, 3000);
+*/
+
+    let indice = 0; // Índice inicial
+    let charIndex = 0; // Índice para las letras
+    let h1 = document.getElementById('titulo'); // Referencia al H1
+    let intervaloEscritura; // Intervalo para la animación de escritura
+
+    // Función para mostrar el texto letra por letra
+    function escribirTexto() {
+      // Obtenemos el texto actual del array según el índice
+      const textoActual = textos[indice];
+
+      // Si aún no se ha completado la animación de las letras
+      if (charIndex < textoActual.length) {
+        h1.textContent += textoActual[charIndex]; // Añadir la siguiente letra
+        charIndex++;
+      } else {
+        // Si se completó el texto, detener la animación y esperar 20 segundos
+        clearInterval(intervaloEscritura);
+        setTimeout(cambiarTexto, 3000); // Esperar 20 segundos antes de cambiar el texto
+      }
+    }
+
+    // Función para cambiar el texto
+    function cambiarTexto() {
+      // Resetear el índice de letras y el contenido del H1
+      h1.textContent = "";
+      charIndex = 0;
+
+      // Incrementar el índice del array de textos y volver al inicio si es necesario
+      indice = (indice + 1) % textos.length;
+
+      // Iniciar la animación de escritura letra por letra
+      intervaloEscritura = setInterval(escribirTexto, 100); // Cambia el número para ajustar la velocidad
+    }
+
+    // Iniciar la animación la primera vez
+    cambiarTexto();

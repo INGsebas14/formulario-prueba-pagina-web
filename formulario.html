@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Usuario</title>
+  <!-- Firebase SDK para navegadores sin usar módulos -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Formulario de Usuario</h1>
+        <p>Para ayudarme a diligenciar el formulario , no es necesario colocar datos reales, solo el email, gracias</p>
+        <form id="userForm">
+            <fieldset id="userEmail">
+                <legend>Correo del usuario</legend>
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="Email">
+            </fieldset>
+            <fieldset id="userData">
+                <legend>Datos del usuario</legend>
+                <label for="accountId">Account ID:</label>
+                <input type="text" id="accountId"  placeholder="Account ID"><br>
+
+                <label for="anio">Año</label>
+                <input type="text" id="anio"  placeholder="Año de nacimiento">
+
+                <label for="avatar">Avatar</label>
+                <input type="text" id="avatar" placeholder="Avatar">
+
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad"  placeholder="Ciudad">
+
+                <label for="cobre">Cobre</label>
+                <input type="text" id="cobre"  placeholder="Monto">
+
+                <label for="codigo">Código</label>
+                <input type="text" id="codigo" placeholder="Código">
+
+                <label for="codigopostal">Código Postal</label>
+                <input type="text" id="codigopostal" placeholder="Código Postal">
+
+                <label for="genero">Género</label>
+                <input type="text" id="genero"  placeholder="Género">
+
+                <label for="insignia">Insignia</label>
+                <input type="text" id="insignia" placeholder="Insignia">
+
+                <label for="mayoredad">Mayor de Edad</label>
+                <input type="text" id="mayoredad" placeholder="Mayor de Edad si o no">
+
+                <label for="metal">Metal</label>
+                <input type="text" id="metal"  placeholder="Monto">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre"  placeholder="Nombre">
+
+                <label for="online">Online</label>
+                <input type="text" id="online" placeholder="Online si o no">
+
+                <label for="pais">País</label>
+                <input type="text" id="pais"  placeholder="País">
+
+                <label for="referidoDe">Referido De</label>
+                <input type="text" id="referidoDe" placeholder="No necesario">
+
+                <label for="terminos">Acepto los términos</label>
+                <input type="text" id="terminos"  placeholder="Si o no">
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

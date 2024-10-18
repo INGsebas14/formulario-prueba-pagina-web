@@ -70,15 +70,7 @@ userForm.addEventListener('submit', async (e) => {
   }
 });
 
-const textos = [ "Bienvenido", "Gracias por ayudarme","Formulario de Usuario"];
-/*
-let i = 0;
-function cambiarTexto() {
-    document.getElementById("texto").innerHTML = textos[i];
-    i = (i + 1) % textos.length;
-}
-setInterval(cambiarTexto, 3000);
-*/
+const textos = [ "Bienvenido", "Gracias por ayudarme","Formulario de Usuario","Se te tiene en cuenta"];
 
     let indice = 0; // Índice inicial
     let charIndex = 0; // Índice para las letras

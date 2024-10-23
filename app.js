@@ -96,7 +96,7 @@ const textos = [ "Bienvenido", "Gracias por ayudarme","Formulario de Usuario","S
     // Función para cambiar el texto
     function cambiarTexto() {
       // Resetear el índice de letras y el contenido del H1
-      h1.textContent = "";
+      h1.textContent = " ";
       charIndex = 0;
 
       // Incrementar el índice del array de textos y volver al inicio si es necesario
@@ -108,3 +108,26 @@ const textos = [ "Bienvenido", "Gracias por ayudarme","Formulario de Usuario","S
 
     // Iniciar la animación la primera vez
     cambiarTexto();
+    let parrafo = document.getElementById('parrafo');
+    let intervaloParrafo;
+    let inicio = 0;
+    let indiceDos = 0;
+    let textoParrafo = ["Para ayudarme a diligenciar el formulario , no es necesario colocar datos reales, solo el email, gracias","THANKS FOR YOUR TIME","HASTA LUEGO","GRACIAS POR SU VISITA"];
+    function escribirParrafo() {
+      let parrafoActual = textoParrafo[inicio];
+      if(indiceDos < parrafoActual.length){
+        parrafo.innerHTML += parrafoActual[indiceDos];
+        indiceDos++;
+      }else{
+        clearInterval(intervaloParrafo);
+        setTimeout(cambiarParrafo, 3000);
+      }
+      
+    }
+    function cambiarParrafo() {
+      parrafo.innerHTML = "";
+      indiceDos = 0;
+      inicio = (inicio + 1) % textoParrafo.length;
+      intervaloParrafo = setInterval(escribirParrafo, 100);
+    }
+    cambiarParrafo();

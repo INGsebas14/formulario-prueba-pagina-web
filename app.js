@@ -89,7 +89,7 @@ const textos = [ "Bienvenido", "Gracias por ayudarme","Formulario de Usuario","S
       } else {
         // Si se completó el texto, detener la animación y esperar 20 segundos
         clearInterval(intervaloEscritura);
-        setTimeout(cambiarTexto, 3000); // Esperar 20 segundos antes de cambiar el texto
+        setTimeout(cambiarTexto, 3000); // Esperar 3 segundos antes de cambiar el texto
       }
     }
 

@@ -108,26 +108,37 @@ const textos = [ "Bienvenido", "Gracias por ayudarme","Formulario de Usuario","S
 
     // Iniciar la animación la primera vez
     cambiarTexto();
+    //capturamos el parrafo
     let parrafo = document.getElementById('parrafo');
     let intervaloParrafo;
     let inicio = 0;
     let indiceDos = 0;
+    //lista de parrafos
     let textoParrafo = ["Para ayudarme a diligenciar el formulario , no es necesario colocar datos reales, solo el email, gracias","THANKS FOR YOUR TIME","HASTA LUEGO","GRACIAS POR SU VISITA"];
+    //funcion para escribir el parrafo
     function escribirParrafo() {
+      //agarra el parrafo de la lista dependiendpo de la posicion de la variabloe de inicio
       let parrafoActual = textoParrafo[inicio];
       if(indiceDos < parrafoActual.length){
+        //escribe la letra por letra dependiendo de posicion
         parrafo.innerHTML += parrafoActual[indiceDos];
         indiceDos++;
       }else{
+        //limpia el parrafo y vuelve a iniciar el parrafo
         clearInterval(intervaloParrafo);
+        //cambia el parrafo cada 3 segundos
         setTimeout(cambiarParrafo, 3000);
       }
       
     }
+    //funcion para cambiar el parrafo
     function cambiarParrafo() {
+      //limpia el parrafo
       parrafo.innerHTML = "";
       indiceDos = 0;
+      //manda la posicion del parrafo
       inicio = (inicio + 1) % textoParrafo.length;
+      //es el que define en que tiempo se escribe cada letra
       intervaloParrafo = setInterval(escribirParrafo, 100);
     }
     cambiarParrafo();

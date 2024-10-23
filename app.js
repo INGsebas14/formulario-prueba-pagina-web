@@ -33,6 +33,7 @@ userForm.addEventListener('submit', async (e) => {
   const mayoredad = document.getElementById('mayoredad').checked;
   const metal = parseFloat(document.getElementById('metal').value);
   const nombre = document.getElementById('nombre').value;
+  const apellido = document.getElementById('apellido').value;
   const online = document.getElementById('online').checked;
   const pais = document.getElementById('pais').value;
   const referidoDe = document.getElementById('referidoDe').value;
@@ -53,6 +54,7 @@ userForm.addEventListener('submit', async (e) => {
       mayoredad: mayoredad,
       metal: metal,
       nombre: nombre,
+      apellido: apellido,
       online: online,
       pais: pais,
       referidoDe: referidoDe,

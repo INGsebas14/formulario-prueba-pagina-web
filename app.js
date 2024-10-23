@@ -114,7 +114,8 @@ const textos = [ "Bienvenido", "Gracias por ayudarme","Formulario de Usuario","S
     let inicio = 0;
     let indiceDos = 0;
     //lista de parrafos
-    let textoParrafo = ["Para ayudarme a diligenciar el formulario , no es necesario colocar datos reales, solo el email, gracias","THANKS FOR YOUR TIME","HASTA LUEGO","GRACIAS POR SU VISITA"];
+    
+    let textoParrafo = ["PARA AYUDARME A DILIGENCIAR EL FORMULARIO , NO ES NECESARIO COLOCAR DATOS REALES, SOLO EL EMAIL, GRACIAS","THANKS FOR YOUR TIME","HASTA LUEGO","GRACIAS POR SU VISITA"];
     //funcion para escribir el parrafo
     function escribirParrafo() {
       //agarra el parrafo de la lista dependiendpo de la posicion de la variabloe de inicio

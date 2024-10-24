@@ -46,7 +46,16 @@ userForm.addEventListener('submit', async (e) => {
   const online = document.getElementById('online').checked;
   const pais = document.getElementById('pais').value;
   const referidoDe = document.getElementById('referidoDe').value;
-  const terminos = document.getElementById('terminos').checked;
+  const aceptado = document.getElementById('aceptado').checked;
+  const rechazado = document.getElementById('rechazado').checked;
+  function terminosUsuario() {
+    if (aceptado) {
+      return 'aceptado';
+    }else if (rechazado) {
+      return 'rechazado';
+    }
+  }
+  const terminos = terminosUsuario();
 
   try {
     // Crear el documento en la colección 'users' con el email como ID del documento

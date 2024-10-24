@@ -34,8 +34,10 @@ input{
     margin: 0;
     flex-direction: row;
 }
-input#masculino{
+.genero{
     color: #0000CD;
+    width: 20px;
+    margin: 0 10px 0 10px;
 }
 .terminos{
     color: #0000CD;

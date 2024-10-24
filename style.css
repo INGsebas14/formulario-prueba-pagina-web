@@ -29,6 +29,15 @@ input{
     width: 90%;
     background-color: aliceblue;
 }
+#generoDiv{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    flex-direction: row;
+}
+input#masculino{
+    color: #0000CD;
+}
 button{
     font-size: 1rem;
     padding: 10px;

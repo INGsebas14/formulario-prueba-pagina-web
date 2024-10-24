@@ -40,7 +40,7 @@
                 <input type="text" id="codigopostal" placeholder="Código Postal">
 
                 <label>Género</label>
-                <div id="generoDiv">
+                <div class="generoDiv">
                     <input type="radio" id="masculino" name="genero">
                     <label for="masculino">Masculino</label>
                     <input type="radio" id="femenino" name="genero">
@@ -68,8 +68,13 @@
                 <label for="referidoDe">Referido De</label>
                 <input type="text" id="referidoDe" placeholder="No necesario">
 
-                <label for="terminos">Acepto los términos</label>
-                <input type="text" id="terminos"  placeholder="Si o no">
+                <label>Acepto los términos</label>
+                <div class="generoDiv">
+                    <input type="radio" id="aceptado" name="terminos">
+                    <label for="aceptado">Si</label>
+                    <input type="radio" id="rechazado" name="terminos">
+                    <label for="rechazado">No</label>
+                </div>
             </fieldset>
             <button type="submit">Enviar</button>
         </form>

@@ -14,7 +14,6 @@ const db = firebase.firestore();
 
 // Referencia al formulario
 const userForm = document.getElementById('userForm');
-
 // Escuchar el evento de envío del formulario
 userForm.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -25,13 +24,23 @@ userForm.addEventListener('submit', async (e) => {
   const anio = parseInt(document.getElementById('anio').value);
   const avatar = document.getElementById('avatar').value;
   const ciudad = document.getElementById('ciudad').value;
-  const cobre = parseFloat(document.getElementById('cobre').value);
+  const cobre = Math.floor(Math.random() * 1000);
   const codigo = document.getElementById('codigo').value;
   const codigopostal = document.getElementById('codigopostal').value;
-  const genero = document.getElementById('genero').value;
+  const generoMaculino = document.getElementById('masculino').checked;
+  const generoFemenino = document.getElementById('femenino').checked;
+  //crear una funcion que escuche que opcion eligio el usuario para el genero
+  function generoFuncion() {
+    if (generoMaculino) {
+      return 'masculino';
+    } else if (generoFemenino) {
+      return 'femenino';
+    }
+  }
+  const genero = generoFuncion();
   const insignia = document.getElementById('insignia').value;
   const mayoredad = document.getElementById('mayoredad').checked;
-  const metal = parseFloat(document.getElementById('metal').value);
+  const metal = Math.floor(Math.random() * 1000);
   const nombre = document.getElementById('nombre').value;
   const apellido = document.getElementById('apellido').value;
   const online = document.getElementById('online').checked;

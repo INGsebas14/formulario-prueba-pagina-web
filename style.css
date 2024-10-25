@@ -39,6 +39,14 @@ input{
     width: 20px;
     margin: 0 10px 0 10px;
 }
+#pais{
+    background-color: aliceblue;
+    width: 90%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1rem;
+}
 .terminos{
     color: #0000CD;
     width: 20px;

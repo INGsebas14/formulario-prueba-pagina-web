@@ -48,6 +48,7 @@ userForm.addEventListener('submit', async (e) => {
   const referidoDe = document.getElementById('referidoDe').value;
   const aceptado = document.getElementById('aceptado').checked;
   const rechazado = document.getElementById('rechazado').checked;
+  //funcion para escuchar que opcion eligio el usuario para los terminos
   function terminosUsuario() {
     if (aceptado) {
       return 'aceptado';

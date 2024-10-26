@@ -17,11 +17,18 @@ const userForm = document.getElementById('userForm');
 // Escuchar el evento de envío del formulario
 userForm.addEventListener('submit', async (e) => {
   e.preventDefault();
-
+let fechaHoy = new Date();
   // Obtener los valores de los campos del formulario
   const email = document.getElementById('email').value;
   const accountId = document.getElementById('accountId').value;
   const anio = parseInt(document.getElementById('anio').value);
+  function anioFuncion() {
+    if (anio < fechaHoy.getFullYear()) {
+      return true;
+    }else{
+      return false;
+    }
+  }
   const avatar = document.getElementById('avatar').value;
   const ciudad = document.getElementById('ciudad').value;
   const cobre = Math.floor(Math.random() * 1000);
@@ -39,7 +46,7 @@ userForm.addEventListener('submit', async (e) => {
   }
   const genero = generoFuncion();
   const insignia = document.getElementById('insignia').value;
-  const mayoredad = document.getElementById('mayoredad').checked;
+  const mayoredad = anioFuncion();
   const metal = Math.floor(Math.random() * 1000);
   const nombre = document.getElementById('nombre').value;
   const apellido = document.getElementById('apellido').value;

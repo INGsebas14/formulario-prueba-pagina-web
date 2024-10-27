@@ -46,6 +46,7 @@ input{
     border-radius: 20px;
     padding: 10px;
     font-size: 1rem;
+    border: none;
 }
 .terminos{
     color: #0000CD;

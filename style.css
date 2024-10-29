@@ -49,12 +49,6 @@ p {
     margin: 10px 0;
 }
 
-/* Estilos para el formulario */
-form {
-    width: 100%;
-    max-width: 500px;
-}
-
 /* Estilos para los fieldset de correo y datos del usuario */
 fieldset {
     width: 300px;

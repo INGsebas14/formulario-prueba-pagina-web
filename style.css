@@ -39,7 +39,7 @@ input{
     width: 20px;
     margin: 0 10px 0 10px;
 }
-#pais{
+.pais{
     background-color: aliceblue;
     width: 90%;
     text-align: center;
@@ -63,7 +63,7 @@ button{
     cursor: pointer;
     width: 100px;
 }
-a{
+a#whatsapp{
     position: fixed;
     bottom: 20px;
     right: 20px;

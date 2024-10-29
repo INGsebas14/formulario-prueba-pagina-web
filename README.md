@@ -3,7 +3,7 @@
 Este proyecto es un formulario básico de registro de usuarios, diseñado para recopilar datos personales de manera segura y organizada.
 
 ## Entra al enlace para ver el formulario
-![Formulario de Registro](https://formulario-prueba-pagina-web.vercel.app/)
+[Formulario de Registro](https://formulario-prueba-pagina-web.vercel.app/)
 
 ## Descripción
 

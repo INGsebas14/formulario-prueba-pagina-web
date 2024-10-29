@@ -21,9 +21,12 @@ let fechaHoy = new Date();
   // Obtener los valores de los campos del formulario
   const email = document.getElementById('email').value;
   const accountId = document.getElementById('accountId').value;
-  const anio = parseInt(document.getElementById('anio').value);
+  const anio = document.getElementById('anio').value;
   function anioFuncion() {
-    if (anio < fechaHoy.getFullYear()) {
+    let fechaNormal= new Date();
+    let fechaHoy = new Date(fechaNormal.getFullYear() - 18, fechaNormal.getMonth(), fechaNormal.getDate());
+    let fechaCumple = new Date(anio)
+    if (fechaCumple <= fechaHoy) {
       return true;
     }else{
       return false;

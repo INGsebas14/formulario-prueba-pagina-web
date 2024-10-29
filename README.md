@@ -2,8 +2,8 @@
 
 Este proyecto es un formulario básico de registro de usuarios, diseñado para recopilar datos personales de manera segura y organizada.
 
-## Captura de Pantalla
-![Formulario de Registro](ruta/a/la/imagen.png)
+## Entra al enlace para ver el formulario
+![Formulario de Registro](https://formulario-prueba-pagina-web.vercel.app/)
 
 ## Descripción
 
@@ -24,6 +24,6 @@ El formulario está diseñado para almacenar estos datos en una base de datos y 
 
 ## Instalación
 
-1. Clona este repositorio:
+1. Frase cool:
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   CON MUCHA PERSEVERANCIA LLEGAN LAS COSAS💻

@@ -84,3 +84,8 @@ span{
     border-radius: 5px; 
     white-space: nowrap;
 }
+.anio{
+    background-color: #0005;
+    color: #fff;
+    border: 1px solid #fff;
+}

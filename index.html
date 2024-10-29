@@ -11,7 +11,10 @@
 </head>
 <body>
     <nav>
-        <a href="https://wa.me/573176887875"?text="hola"><img src="assets/whatsapp.png"> <span>si tienes problemas mandame mensaje</span></a>
+        <a href="https://wa.me/573176887875"?text="hola" id="whatsapp">
+            <img src="assets/whatsapp.png"> 
+            <span>si tienes problemas mandame mensaje</span>
+        </a>
     </nav>
     <main>
         <h1 id="titulo"></h1>
@@ -24,41 +27,6 @@
             </fieldset>
             <fieldset id="userData">
                 <legend>Datos del usuario</legend>
-                <label for="accountId">Numero de documento</label>
-                <input type="text" id="accountId"  placeholder="Account ID"><br>
-
-                <label for="anio">Año de nacimiento</label>
-                <input type="date" id="anio"  placeholder="Año de nacimiento">
-
-                <label for="avatar">Avatar de videojuego favorito</label>
-                <input type="text" id="avatar" placeholder="Avatar">
-
-                <label for="ciudad">Ciudad</label>
-                <input type="text" id="ciudad"  placeholder="Ciudad">
-
-                <label for="codigo">Código de juego</label>
-                <input type="text" id="codigo" placeholder="Código">
-
-                <label for="codigopostal">Código Postal</label>
-                <input type="text" id="codigopostal" placeholder="Código Postal">
-
-                <label>Género</label>
-                <div class="generoDiv">
-                    <input type="radio" id="masculino" name="genero" class="genero">
-                    <label for="masculino">Masculino</label>
-                    <input type="radio" id="femenino" name="genero" class="genero">
-                    <label for="femenino">Femenino</label>
-                </div>
-
-                <label for="insignia">Rango del juego</label>
-                <select name="insignia" id="insignia">
-                    <option value="" selected>Selecciona un rango</option>
-                    <option value="Plata">Plata</option>
-                    <option value="Oro">Oro</option>
-                    <option value="Diamanete">Diamanete</option>
-                    <option value="Heroico">Heroico</option>
-                    <option value="Maestro">Maestro</option>
-                </select>
 
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre"  placeholder="Nombre">
@@ -66,11 +34,25 @@
                 <label for="apellido">Apellido</label>
                 <input type="text" id="apellido"  placeholder="Apellido">
 
-                <label for="online">Online</label>
-                <input type="text" id="online" placeholder="Online si o no">
+                <label for="accountId">Numero de documento</label>
+                <input type="text" id="accountId"  placeholder="Account ID"><br>
+
+                <label for="anio">Año de nacimiento</label>
+                <input type="date" id="anio"  placeholder="Año de nacimiento">
+
+                <label for="avatar">Avatar favorito</label>
+                <select name="avatar" id="avatar" class="pais">
+                    <option value="" selected>Selecciona un avatar</option>
+                    <option value="Goku">Goku</option>
+                    <option value="Vegeta">Vegeta</option>
+                    <option value="Trunks">Trunks</option>
+                    <option value="Naruto">Naruto</option>
+                    <option value="Sasuke">Sasuke</option>
+                    <option value="Sakura">Sakura</option>
+                </select>
 
                 <label for="pais">País</label>
-                <select name="pais" id="pais">
+                <select name="pais" id="pais" class="pais">
                     <option value="" selected>Selecciona un país</option>
                     <option value="argentina">Argentina</option>
                     <option value="brasil">Brasil</option>
@@ -82,10 +64,41 @@
                     <option value="venezuela">Venezuela</option>
                 </select>
 
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad"  placeholder="Ciudad">
+
+                <label for="codigopostal">Código Postal</label>
+                <input type="text" id="codigopostal" placeholder="Código Postal">
+
+                <label for="codigo">Código de juego</label>
+                <input type="text" id="codigo" placeholder="Código">
+
+                <label>Género</label>
+                <div class="generoDiv">
+                    <input type="radio" id="masculino" name="genero" class="genero">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="genero" class="genero">
+                    <label for="femenino">Femenino</label>
+                </div>
+
+                <label for="insignia">Rango del juego</label>
+                <select name="insignia" id="insignia" class="pais">
+                    <option value="" selected>Selecciona un rango</option>
+                    <option value="Plata">Plata</option>
+                    <option value="Oro">Oro</option>
+                    <option value="Diamanete">Diamanete</option>
+                    <option value="Heroico">Heroico</option>
+                    <option value="Maestro">Maestro</option>
+                </select>
+
+                <label for="online">Online</label>
+                <input type="text" id="online" placeholder="Online si o no">
+
                 <label for="referidoDe">Referido De</label>
                 <input type="text" id="referidoDe" placeholder="No necesario">
 
                 <label>Acepto los términos</label>
+                <p>Estoy de acuerdo con los <a href="avisoPrivacidad/aviso_privacidad_formulario.pdf" target="_blank">términos de privacidad</a></p>
                 <div class="generoDiv">
                     <input type="radio" id="aceptado" name="terminos" class="terminos">
                     <label for="aceptado">Si</label>

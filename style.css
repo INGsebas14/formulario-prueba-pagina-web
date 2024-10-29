@@ -1,45 +1,91 @@
-body{
+/* Estilo general */
+body {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
-main{
+
+/* Estilos para el enlace de WhatsApp en el nav */
+a#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+span {
+    position: inherit;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+/* Estilos para el main */
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
 }
-fieldset{
+
+/* Título y párrafo dentro del main */
+h1 {
+    margin-top: 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Estilos para el formulario */
+form {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Estilos para los fieldset de correo y datos del usuario */
+fieldset {
     width: 300px;
     border-radius: 20px;
     margin: 20px;
     border-color: #0000CD;
 }
-label{
+
+label {
     margin-top: 10px;
     display: block;
     margin-bottom: 10px;
 }
-input{
+
+/* Estilos para los input */
+input {
     padding: 10px;
     font-size: 1rem;
     border-radius: 20px;
     width: 90%;
     background-color: aliceblue;
 }
-.generoDiv{
-    display: flex;
-    margin: 0;
-    flex-direction: row;
+
+.anio {
+    background-color: #0005;
+    color: #fff;
+    border: 1px solid #fff;
 }
-.genero{
-    color: #0000CD;
-    width: 20px;
-    margin: 0 10px 0 10px;
-}
-.pais{
+
+/* Estilos para los select (avatar, país, insignia) */
+.pais {
     background-color: aliceblue;
     width: 90%;
     text-align: center;
@@ -48,12 +94,29 @@ input{
     font-size: 1rem;
     border: none;
 }
-.terminos{
+
+/* Estilos para el grupo de radio buttons de género */
+.generoDiv {
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+}
+
+.genero {
     color: #0000CD;
     width: 20px;
-    margin: 0 10px 0 10px; 
+    margin: 0 10px 0 10px;
 }
-button{
+
+/* Estilos para los radio buttons de términos */
+.terminos {
+    color: #0000CD;
+    width: 20px;
+    margin: 0 10px 0 10px;
+}
+
+/* Estilos para el botón de envío */
+button {
     font-size: 1rem;
     padding: 10px;
     border-radius: 20px;
@@ -62,30 +125,4 @@ button{
     color: white;
     cursor: pointer;
     width: 100px;
-}
-a#whatsapp{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-}
-img{
-    width: 50px;
-    height: 50px;
-}
-span{
-    position: inherit; 
-    bottom: 10px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    background-color: rgba(0, 0, 0, 0.7); 
-    color: #fff; 
-    padding: 5px; 
-    border-radius: 5px; 
-    white-space: nowrap;
-}
-.anio{
-    background-color: #0005;
-    color: #fff;
-    border: 1px solid #fff;
 }
